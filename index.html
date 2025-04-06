@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <!-- Ordered list with roman numerals -->
+    <h2>Steps to Complete:</h2>
+    <ol type="I">
+        <li>Gather requirements</li>
+        <li>Design the layout</li>
+        <li>Develop the page</li>
+        <li>Test functionality</li>
+        <li>Deploy to production</li>
+    </ol>
+
+    <!-- External image from pexels.com -->
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+         alt="Beautiful landscape" 
+         width="400">
+
+    <!-- Contacts table -->
+    <h2>Contact List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samuel Mwangi</td>
+                <td>Kiambu</td>
+                <td>0792876974</td>
+                <td>sammwangi7965@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Jones</td>
+                <td>456 Oak Ave, Somewhere</td>
+                <td>07348934798</td>
+                <td>s.sarah@gmaail.com</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>789 Pine Rd, Nowhere</td>
+                <td>555-0103</td>
+                <td>michael.b@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>321 Elm Blvd, Anywhere</td>
+                <td>555-0104</td>
+                <td>emily.davis@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Robert Wilson</td>
+                <td>654 Maple Ln, Everywhere</td>
+                <td>555-0105</td>
+                <td>rob.wilson@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+        <!-- Text Inputs -->
+        <div>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" 
+                   placeholder="Enter your full name" 
+                   required
+                   minlength="3">
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" 
+                   placeholder="Enter your email address" 
+                   required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" 
+                   placeholder="Create a password (min 8 characters)" 
+                   required
+                   minlength="8">
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Dropdown -->
+        <div>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            <label>Interests (select all that apply):</label><br>
+            <input type="checkbox" id="tech" name="interests" value="technology">
+            <label for="tech">Technology</label>
+            
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Travel</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
